@@ -1,0 +1,36 @@
+:root {
+    --cust-primary: #008060;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.hero {
+    position: relative;
+    background: var(--cust-primary) !important;
+    color: #fff; 
+}
+
+.wave {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 641px) {
+    .title {
+        font-size: 2rem !important;
+        text-align: center;
+        padding: 0 .5rem;
+    }
+
+    .title ~ p {
+        font-size: 1.2rem !important;
+        text-align: center;
+        padding: 0 .5rem;
+    }
+}
